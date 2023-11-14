@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyVC</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="main_title">Welcome To MyVC</string>
+    <string name="login_no_account">
+        I don\'t have an account. <font color="#FF0E90E1"><b>Register</b></font>
+    </string>
+    <string name="register_have_account">
+        I already have an account. <font color="#FF0E90E1"><b>Login</b></font>
+    </string>
+    <string name="register_title">REGISTER</string>
+    <string name="username_heading">Username</string>
+    <string name="email_heading">Email</string>
+    <string name="password_heading">Password</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="login_title">LOGIN</string>
+    <string name="role_heading">Role</string>
+    <string name="role">e.g. Admin, Lecturer or Student</string>
+</resources>

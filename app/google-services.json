@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "401535026049",
+    "project_id": "myvc-8adb3",
+    "storage_bucket": "myvc-8adb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401535026049:android:fb10a53f10a9e6a08d9e80",
+        "android_client_info": {
+          "package_name": "com.example.myvc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBThTNiil6FyOJMk6gYdablGjqF1V7LNOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
