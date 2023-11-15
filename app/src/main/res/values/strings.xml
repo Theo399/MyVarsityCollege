@@ -33,4 +33,16 @@
     <string name="set_reminders">Set Reminders</string>
     <string name="generate_reports">Generate reports</string>
     <string name="manage_scheduling">Manage Scheduling</string>
+    <string name="access_learning">Access Learning</string>
+    <string name="view_marks">View Marks</string>
+    <string name="raise_query">Raise Query</string>
+    <string name="submit">Submit</string>
+    <string name="admin">ADMIN</string>
+    <string name="student">STUDENT</string>
+    <string name="lecturer">LECTURER</string>
+    <string name="grade_assessment">Grade Assessment</string>
+    <string name="submit_complaints">Submit Complaints</string>
+    <string name="take_register">Take Register</string>
+    <string name="update_status">Update Status</string>
+    <string name="view_workload">View Workload</string>
 </resources>

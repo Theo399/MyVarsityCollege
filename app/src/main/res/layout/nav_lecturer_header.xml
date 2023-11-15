@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
-        android:text="@string/admin"
+        android:text="@string/lecturer"
         android:textStyle="bold"
         android:textSize="30sp"
         android:textColor="@color/white"/>

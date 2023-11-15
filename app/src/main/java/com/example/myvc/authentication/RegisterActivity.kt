@@ -28,32 +28,6 @@ class RegisterActivity : AppCompatActivity() {
         firebaseDatabase = FirebaseDatabase.getInstance()
         databaseReference = firebaseDatabase.reference.child("credentials")
 
-
-        /*spinner = binding.spinner
-
-        val roles = arrayOf("Admin", "Lecturer", "Student")
-
-        val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, roles)
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner.adapter = arrayAdapter
-        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onItemSelected(
-                parent: AdapterView<*>,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                selectedItem = parent.getItemAtPosition(position).toString()
-                Toast.makeText(this@RegisterActivity, "You have selected: $selectedItem", Toast.LENGTH_SHORT)
-                    .show()
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-
-            }
-
-        }*/
-
         binding.registerBtn.setOnClickListener {
             binding.registerBtn.setBackgroundColor(Color.BLUE)
             binding.registerBtn.setTextColor(Color.WHITE)
@@ -68,20 +42,6 @@ class RegisterActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this@RegisterActivity, "Fill all the fields", Toast.LENGTH_SHORT).show()
             }
-
-            /*if (username.isNotEmpty() && role.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()) {
-                auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        Toast.makeText(this, "Registered Successfully", Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this, LoginActivity::class.java))
-                        finish()
-                    } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
-                    }
-                }
-            } else {
-                Toast.makeText(this, "Fill all the fields", Toast.LENGTH_SHORT).show()
-            }*/
         }
 
         binding.haveAccount.setOnClickListener {

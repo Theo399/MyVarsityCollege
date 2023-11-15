@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:title="@string/home"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"/>
+
+        <item
+            android:title="@string/grade_assessment"
+            android:id="@+id/nav_assessment"
+            android:icon="@drawable/ic_assessment"/>
+
+        <item
+            android:title="@string/view_workload"
+            android:id="@+id/nav_workload"
+            android:icon="@drawable/ic_monitor"/>
+
+        <item
+            android:title="@string/update_status"
+            android:id="@+id/nav_status"
+            android:icon="@drawable/ic_status"/>
+
+        <item
+            android:title="@string/communicate"
+            android:id="@+id/nav_learning"
+            android:icon="@drawable/ic_communicate"/>
+
+        <item
+            android:title="@string/submit_complaints"
+            android:id="@+id/nav_complaint"
+            android:icon="@drawable/ic_submit"/>
+
+        <item
+            android:title="@string/take_register"
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_register"/>
+
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:title="@string/logout"
+                android:id="@+id/logoutBtn"
+                android:icon="@drawable/ic_logout"/>
+        </menu>
+
+    </item>
+
+</menu>

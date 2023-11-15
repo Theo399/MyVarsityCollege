@@ -13,12 +13,12 @@ import com.example.myvc.R
 import com.example.myvc.authorization.admin.fragments.AnnouncementFragment
 import com.example.myvc.authorization.admin.fragments.AssistFragment
 import com.example.myvc.authorization.admin.fragments.CommunicateFragment
-import com.example.myvc.authorization.admin.fragments.HomeFragment
 import com.example.myvc.authorization.admin.fragments.MarkFragment
 import com.example.myvc.authorization.admin.fragments.MonitorFragment
 import com.example.myvc.authorization.admin.fragments.ReminderFragment
 import com.example.myvc.authorization.admin.fragments.ReportFragment
 import com.example.myvc.authorization.admin.fragments.ScheduleFragment
+import com.example.myvc.authorization.home.HomeFragment
 import com.example.myvc.databinding.ActivityAdminBinding
 import com.google.android.material.navigation.NavigationView
 
