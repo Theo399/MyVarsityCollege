@@ -8,29 +8,13 @@
 
         <item
             android:title="@string/home"
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_s_home"
             android:icon="@drawable/ic_home"/>
 
         <item
-            android:title="@string/submit"
-            android:id="@+id/nav_submit"
-            android:icon="@drawable/ic_submit"/>
-
-        <item
-            android:title="@string/raise_query"
-            android:id="@+id/nav_query"
-            android:icon="@drawable/ic_query"/>
-
-        <item
-            android:title="@string/view_marks"
-            android:id="@+id/nav_mark"
-            android:icon="@drawable/ic_mark"/>
-
-        <item
-            android:title="@string/access_learning"
-            android:id="@+id/nav_learning"
-            android:icon="@drawable/ic_learning"/>
-
+            android:title="@string/communicate"
+            android:id="@+id/nav_s_communicate"
+            android:icon="@drawable/ic_communicate"/>
 
     </group>
 
@@ -40,7 +24,7 @@
         <menu>
             <item
                 android:title="@string/logout"
-                android:id="@+id/logoutBtn"
+                android:id="@+id/nav_s_logout"
                 android:icon="@drawable/ic_logout"/>
         </menu>
 

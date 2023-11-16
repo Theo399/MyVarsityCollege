@@ -1,4 +1,4 @@
-package com.example.myvc.authorization.lecturer.fragments
+package com.example.myvc.authorization.student.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -13,15 +13,14 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.example.myvc.R
 
-
-class lCommunicateFragment : Fragment() {
+class sCommunicateFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_l_communicate, container, false)
+        return inflater.inflate(R.layout.fragment_s_communicate, container, false)
     }
 
     @SuppressLint("SetJavaScriptEnabled")

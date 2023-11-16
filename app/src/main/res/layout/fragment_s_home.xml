@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".authorization.lecturer.fragments.lCommunicateFragment">
+    tools:context=".authorization.student.fragments.sHomeFragment">
 
     <WebView
         android:id="@+id/webView"

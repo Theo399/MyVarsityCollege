@@ -4,21 +4,15 @@ package com.example.myvc.authorization.admin
 
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.myvc.R
-import com.example.myvc.authorization.admin.fragments.AnnouncementFragment
-import com.example.myvc.authorization.admin.fragments.AssistFragment
-import com.example.myvc.authorization.admin.fragments.CommunicateFragment
-import com.example.myvc.authorization.admin.fragments.MarkFragment
-import com.example.myvc.authorization.admin.fragments.MonitorFragment
-import com.example.myvc.authorization.admin.fragments.ReminderFragment
-import com.example.myvc.authorization.admin.fragments.ReportFragment
-import com.example.myvc.authorization.admin.fragments.ScheduleFragment
-import com.example.myvc.authorization.home.HomeFragment
+import com.example.myvc.authorization.admin.fragments.aCommunicateFragment
+import com.example.myvc.authorization.admin.fragments.aHomeFragment
+import com.example.myvc.authorization.admin.fragments.aLogoutFragment
+import com.example.myvc.authorization.admin.fragments.aRegisterFragment
 import com.example.myvc.databinding.ActivityAdminBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -45,32 +39,21 @@ class AdminActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, HomeFragment()).commit()
-            navigationView.setCheckedItem(R.id.nav_home)
+                .replace(R.id.frameLayout, aHomeFragment()).commit()
+            navigationView.setCheckedItem(R.id.nav_a_home)
         }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
-            R.id.nav_home -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, HomeFragment()).commit()
-            R.id.nav_announcement -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, AnnouncementFragment()).commit()
-            R.id.nav_monitor -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, MonitorFragment()).commit()
-            R.id.nav_schedule -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, ScheduleFragment()).commit()
-            R.id.nav_report -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, ReportFragment()).commit()
-            R.id.nav_communicate -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, CommunicateFragment()).commit()
-            R.id.nav_mark -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, MarkFragment()).commit()
-            R.id.nav_assist -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, AssistFragment()).commit()
-            R.id.nav_reminder -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, ReminderFragment()).commit()
-            R.id.logoutBtn -> Toast.makeText(this, "Logged out Successfully", Toast.LENGTH_SHORT).show()
+            R.id.nav_l_home -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aHomeFragment()).commit()
+            R.id.nav_a_register -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aRegisterFragment()).commit()
+            R.id.nav_a_communicate -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aCommunicateFragment()).commit()
+            R.id.nav_a_logout -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aLogoutFragment()).commit()//Toast.makeText(this, "Logged out Successfully", Toast.LENGTH_SHORT).show()
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true

@@ -51,17 +51,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
-        android:id="@+id/registerBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/black"
-        android:text="@string/register"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

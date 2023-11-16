@@ -45,11 +45,11 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        binding.noAccount.setOnClickListener {
+        /*binding.noAccount.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
             Toast.makeText(this, "Please Register", Toast.LENGTH_SHORT).show()
             finish()
-        }
+        }*/
     }
 
     private fun login (email: String, password: String) {

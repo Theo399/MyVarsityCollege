@@ -8,48 +8,19 @@
 
         <item
             android:title="@string/home"
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_a_home"
             android:icon="@drawable/ic_home"/>
 
         <item
-            android:title="@string/send_announcements"
-            android:id="@+id/nav_announcement"
-            android:icon="@drawable/ic_announcement"/>
-
-        <item
-            android:title="@string/monitor_workload"
-            android:id="@+id/nav_monitor"
-            android:icon="@drawable/ic_monitor"/>
-
-        <item
-            android:title="@string/manage_scheduling"
-            android:id="@+id/nav_schedule"
-            android:icon="@drawable/ic_schedule"/>
-
-        <item
-            android:title="@string/generate_reports"
-            android:id="@+id/nav_report"
-            android:icon="@drawable/ic_report"/>
+            android:title="@string/registerAdmin"
+            android:id="@+id/nav_a_register"
+            android:icon="@drawable/ic_register"/>
 
         <item
             android:title="@string/communicate"
-            android:id="@+id/nav_communicate"
+            android:id="@+id/nav_a_communicate"
             android:icon="@drawable/ic_communicate"/>
 
-        <item
-            android:title="@string/balance_marks"
-            android:id="@+id/nav_mark"
-            android:icon="@drawable/ic_mark"/>
-
-        <item
-            android:title="@string/assist_students"
-            android:id="@+id/nav_assist"
-            android:icon="@drawable/ic_assist"/>
-
-        <item
-            android:title="@string/set_reminders"
-            android:id="@+id/nav_reminder"
-            android:icon="@drawable/ic_reminder"/>
     </group>
 
     <item
@@ -58,7 +29,7 @@
         <menu>
             <item
                 android:title="@string/logout"
-                android:id="@+id/logoutBtn"
+                android:id="@+id/nav_a_logout"
                 android:icon="@drawable/ic_logout"/>
         </menu>
 

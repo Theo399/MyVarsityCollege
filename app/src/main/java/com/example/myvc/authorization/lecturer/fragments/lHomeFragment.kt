@@ -13,15 +13,14 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.example.myvc.R
 
-
-class lCommunicateFragment : Fragment() {
+class lHomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_l_communicate, container, false)
+        return inflater.inflate(R.layout.fragment_l_home, container, false)
     }
 
     @SuppressLint("SetJavaScriptEnabled")
@@ -38,7 +37,6 @@ class lCommunicateFragment : Fragment() {
 
 
             }
-
 
         }
         val webSetting: WebSettings = myWebView.settings
@@ -58,7 +56,7 @@ class lCommunicateFragment : Fragment() {
         })
 
 
-        myWebView.loadUrl("https://mail.google.com/mail/u/0/#inbox")
+        myWebView.loadUrl("https://classroom.google.com/h")
         myWebView.settings.javaScriptEnabled = true
         myWebView.settings.allowContentAccess = true
         myWebView.settings.domStorageEnabled = true

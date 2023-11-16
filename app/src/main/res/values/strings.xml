@@ -45,4 +45,9 @@
     <string name="take_register">Take Register</string>
     <string name="update_status">Update Status</string>
     <string name="view_workload">View Workload</string>
+    <string name="you_may_proceed_to_logout">You may proceed to logout.</string>
+    <string name="logoutBtn">LOGOUT</string>
+    <string name="registerAdmin">Register</string>
+    <string name="add_a_user">Add a user</string>
+    <string name="maintenance_in_progress">Maintenance in progress</string>
 </resources>
