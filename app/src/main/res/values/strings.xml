@@ -50,4 +50,12 @@
     <string name="registerAdmin">Register</string>
     <string name="add_a_user">Add a user</string>
     <string name="maintenance_in_progress">Maintenance in progress</string>
+    <string name="varsity_college_sandton">Varsity College Sandton</string>
+    <string name="track_assessment">Track Assessment</string>
+    <string name="assignments">Assignments</string>
+    <string name="lecturer_availability">Lecturer Availability</string>
+    <string name="marks_and_feedback">Marks and Feedback</string>
+    <string name="learning_material">Learning Material</string>
+    <string name="queries">Queries</string>
+    <string name="class_schedule">Class Schedule</string>
 </resources>

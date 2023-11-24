@@ -16,6 +16,41 @@
             android:id="@+id/nav_s_communicate"
             android:icon="@drawable/ic_communicate"/>
 
+        <item
+            android:title="@string/learning_material"
+            android:id="@+id/nav_s_material"
+            android:icon="@drawable/ic_learning"/>
+
+        <item
+            android:title="@string/queries"
+            android:id="@+id/nav_s_query"
+            android:icon="@drawable/ic_assist"/>
+
+        <item
+            android:title="@string/assignments"
+            android:id="@+id/nav_s_assignment"
+            android:icon="@drawable/ic_assignments"/>
+
+        <item
+            android:title="@string/marks_and_feedback"
+            android:id="@+id/nav_s_mark"
+            android:icon="@drawable/ic_assessment"/>
+
+        <item
+            android:title="@string/lecturer_availability"
+            android:id="@+id/nav_s_availability"
+            android:icon="@drawable/ic_availability"/>
+
+        <item
+            android:title="@string/track_assessment"
+            android:id="@+id/nav_s_assessment"
+            android:icon="@drawable/ic_status"/>
+
+        <item
+            android:title="@string/class_schedule"
+            android:id="@+id/nav_s_schedule"
+            android:icon="@drawable/ic_schedule"/>
+
     </group>
 
     <item

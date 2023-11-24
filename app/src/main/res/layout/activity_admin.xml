@@ -19,7 +19,8 @@
             android:id="@+id/toolBar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@color/yellow"/>
+            android:background="@color/black"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
 
         <FrameLayout
             android:id="@+id/frameLayout"
@@ -29,11 +30,11 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"
-        android:layout_width="250dp"
+        android:layout_width="340dp"
         android:layout_height="match_parent"
-        android:background="@color/black"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
+        android:background="@drawable/admin_book"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_admin_header"
         app:menu="@menu/nav_admin"/>
