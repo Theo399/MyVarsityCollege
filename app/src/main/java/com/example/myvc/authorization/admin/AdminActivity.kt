@@ -9,10 +9,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.myvc.R
+import com.example.myvc.authorization.admin.fragments.aAnnouncementFragment
+import com.example.myvc.authorization.admin.fragments.aAssessmentFragment
 import com.example.myvc.authorization.admin.fragments.aCommunicateFragment
 import com.example.myvc.authorization.admin.fragments.aHomeFragment
 import com.example.myvc.authorization.admin.fragments.aLogoutFragment
+import com.example.myvc.authorization.admin.fragments.aMarkFragment
 import com.example.myvc.authorization.admin.fragments.aRegisterFragment
+import com.example.myvc.authorization.admin.fragments.aReminderFragment
+import com.example.myvc.authorization.admin.fragments.aReportFragment
+import com.example.myvc.authorization.admin.fragments.aWorkloadFragment
 import com.example.myvc.databinding.ActivityAdminBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -52,6 +58,18 @@ class AdminActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                 .replace(R.id.frameLayout, aRegisterFragment()).commit()
             R.id.nav_a_communicate -> supportFragmentManager.beginTransaction()
                 .replace(R.id.frameLayout, aCommunicateFragment()).commit()
+            R.id.nav_a_announcement -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aAnnouncementFragment()).commit()
+            R.id.nav_a_workload -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aWorkloadFragment()).commit()
+            R.id.nav_a_assessment -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aAssessmentFragment()).commit()
+            R.id.nav_a_report -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aReportFragment()).commit()
+            R.id.nav_a_mark -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aMarkFragment()).commit()
+            R.id.nav_a_reminder -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aReminderFragment()).commit()
             R.id.nav_a_logout -> supportFragmentManager.beginTransaction()
                 .replace(R.id.frameLayout, aLogoutFragment()).commit()//Toast.makeText(this, "Logged out Successfully", Toast.LENGTH_SHORT).show()
         }

@@ -21,6 +21,36 @@
             android:id="@+id/nav_a_communicate"
             android:icon="@drawable/ic_communicate"/>
 
+        <item
+            android:title="@string/announcements"
+            android:id="@+id/nav_a_announcement"
+            android:icon="@drawable/ic_announcement"/>
+
+        <item
+            android:title="@string/lecturer_workload_process"
+            android:id="@+id/nav_a_workload"
+            android:icon="@drawable/ic_assessment"/>
+
+        <item
+            android:title="@string/assessment_timetables"
+            android:id="@+id/nav_a_assessment"
+            android:icon="@drawable/ic_query"/>
+
+        <item
+            android:title="@string/assessment_reports"
+            android:id="@+id/nav_a_report"
+            android:icon="@drawable/ic_report"/>
+
+        <item
+            android:title="@string/marks_balance_and_verification"
+            android:id="@+id/nav_a_mark"
+            android:icon="@drawable/ic_mark"/>
+
+        <item
+            android:title="@string/assessment_and_deadline_reminders"
+            android:id="@+id/nav_a_reminder"
+            android:icon="@drawable/ic_schedule"/>
+
     </group>
 
     <item

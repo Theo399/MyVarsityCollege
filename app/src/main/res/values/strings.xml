@@ -58,4 +58,11 @@
     <string name="learning_material">Learning Material</string>
     <string name="queries">Queries</string>
     <string name="class_schedule">Class Schedule</string>
+    <string name="announcements">Announcements</string>
+    <string name="marks_balance_and_verification">Marks Balance and Verification</string>
+    <string name="assessment_and_deadline_reminders">Assessment and Deadline Reminders</string>
+    <string name="assessment_reports">Assessment Reports</string>
+    <string name="assessment_schedules_and_timetables">Assessment Schedules and Timetables</string>
+    <string name="lecturer_workload_process">Lecturer Workload Process</string>
+    <string name="assessment_timetables">Assessment Timetables</string>
 </resources>
