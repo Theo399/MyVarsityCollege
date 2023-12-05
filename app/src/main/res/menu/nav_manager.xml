@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:title="@string/dashboard"
+            android:id="@+id/nav_m_dashboard"
+            android:icon="@drawable/ic_dashboard"/>
+
+        <item
+            android:title="@string/calendar"
+            android:id="@+id/nav_m_calendar"
+            android:icon="@drawable/ic_calendar"/>
+
+        <item
+            android:title="@string/files_library"
+            android:id="@+id/nav_m_files"
+            android:icon="@drawable/ic_files"/>
+
+        <item
+            android:title="@string/assign_courses"
+            android:id="@+id/nav_m_courses"
+            android:icon="@drawable/ic_courses"/>
+
+        <item
+            android:title="@string/team"
+            android:id="@+id/nav_m_team"
+            android:icon="@drawable/ic_team"/>
+
+        <item
+            android:title="@string/messenger"
+            android:id="@+id/nav_m_messenger"
+            android:icon="@drawable/ic_messenger"/>
+
+        <item
+            android:title="@string/feedback"
+            android:id="@+id/nav_m_feedback"
+            android:icon="@drawable/ic_feedback"/>
+
+        <item
+            android:title="@string/late_submission_application"
+            android:id="@+id/nav_m_application"
+            android:icon="@drawable/ic_application"/>
+
+        <item
+            android:title="@string/trace_application_status"
+            android:id="@+id/nav_m_status"
+            android:icon="@drawable/ic_status"/>
+
+        <item
+            android:title="@string/logout"
+            android:id="@+id/nav_m_logout"
+            android:icon="@drawable/ic_logout"/>
+
+    </group>
+
+</menu>

@@ -2,6 +2,7 @@
 
 package com.example.myvc.authorization.admin
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -9,16 +10,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.myvc.R
-import com.example.myvc.authorization.admin.fragments.aAnnouncementFragment
-import com.example.myvc.authorization.admin.fragments.aAssessmentFragment
-import com.example.myvc.authorization.admin.fragments.aCommunicateFragment
-import com.example.myvc.authorization.admin.fragments.aHomeFragment
-import com.example.myvc.authorization.admin.fragments.aLogoutFragment
-import com.example.myvc.authorization.admin.fragments.aMarkFragment
-import com.example.myvc.authorization.admin.fragments.aRegisterFragment
-import com.example.myvc.authorization.admin.fragments.aReminderFragment
-import com.example.myvc.authorization.admin.fragments.aReportFragment
-import com.example.myvc.authorization.admin.fragments.aWorkloadFragment
+import com.example.myvc.authentication.LoginActivity
+import com.example.myvc.authentication.RegisterActivity
+import com.example.myvc.authorization.admin.fragments.aApplicationFragment
+import com.example.myvc.authorization.admin.fragments.aCalendarFragment
+import com.example.myvc.authorization.admin.fragments.aCoursesFragment
+import com.example.myvc.authorization.admin.fragments.aDashboardFragment
+import com.example.myvc.authorization.admin.fragments.aFeedbackFragment
+import com.example.myvc.authorization.admin.fragments.aFilesFragment
+import com.example.myvc.authorization.admin.fragments.aMessengerFragment
+import com.example.myvc.authorization.admin.fragments.aTeamFragment
+import com.example.myvc.authorization.admin.fragments.aTimetablesFragment
 import com.example.myvc.databinding.ActivityAdminBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -45,33 +47,33 @@ class AdminActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aHomeFragment()).commit()
-            navigationView.setCheckedItem(R.id.nav_a_home)
+                .replace(R.id.frameLayout, aDashboardFragment()).commit()
+            navigationView.setCheckedItem(R.id.nav_a_dashboard)
         }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
-            R.id.nav_l_home -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aHomeFragment()).commit()
-            R.id.nav_a_register -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aRegisterFragment()).commit()
-            R.id.nav_a_communicate -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aCommunicateFragment()).commit()
-            R.id.nav_a_announcement -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aAnnouncementFragment()).commit()
-            R.id.nav_a_workload -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aWorkloadFragment()).commit()
-            R.id.nav_a_assessment -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aAssessmentFragment()).commit()
-            R.id.nav_a_report -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aReportFragment()).commit()
-            R.id.nav_a_mark -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aMarkFragment()).commit()
-            R.id.nav_a_reminder -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aReminderFragment()).commit()
-            R.id.nav_a_logout -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aLogoutFragment()).commit()//Toast.makeText(this, "Logged out Successfully", Toast.LENGTH_SHORT).show()
+            R.id.nav_a_dashboard -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aDashboardFragment()).commit()
+            R.id.nav_a_calendar -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aCalendarFragment()).commit()
+            R.id.nav_a_files -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aFilesFragment()).commit()
+            R.id.nav_a_courses -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aCoursesFragment()).commit()
+            R.id.nav_a_team -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aTeamFragment()).commit()
+            R.id.nav_a_messenger -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aMessengerFragment()).commit()
+            R.id.nav_a_feedback -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aFeedbackFragment()).commit()
+            R.id.nav_a_user -> startActivity(Intent(this@AdminActivity, RegisterActivity::class.java))
+            R.id.nav_a_timetables -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aTimetablesFragment()).commit()
+            R.id.nav_a_application -> supportFragmentManager.beginTransaction()
+                .replace(R.id.frameLayout, aApplicationFragment()).commit()
+            R.id.nav_a_logout -> startActivity(Intent(this@AdminActivity, LoginActivity::class.java))//Toast.makeText(this, "Logged out Successfully", Toast.LENGTH_SHORT).show()
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true

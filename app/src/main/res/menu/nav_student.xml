@@ -7,62 +7,50 @@
         android:checkableBehavior="single">
 
         <item
-            android:title="@string/home"
-            android:id="@+id/nav_s_home"
-            android:icon="@drawable/ic_home"/>
+            android:title="@string/dashboard"
+            android:id="@+id/nav_s_dashboard"
+            android:icon="@drawable/ic_dashboard"/>
 
         <item
-            android:title="@string/communicate"
-            android:id="@+id/nav_s_communicate"
-            android:icon="@drawable/ic_communicate"/>
+            android:title="@string/calendar"
+            android:id="@+id/nav_s_calendar"
+            android:icon="@drawable/ic_calendar"/>
 
         <item
-            android:title="@string/learning_material"
-            android:id="@+id/nav_s_material"
-            android:icon="@drawable/ic_learning"/>
+            android:title="@string/members"
+            android:id="@+id/nav_s_members"
+            android:icon="@drawable/ic_members"/>
 
         <item
-            android:title="@string/queries"
-            android:id="@+id/nav_s_query"
-            android:icon="@drawable/ic_assist"/>
+            android:title="@string/files_library"
+            android:id="@+id/nav_s_files"
+            android:icon="@drawable/ic_files"/>
 
         <item
-            android:title="@string/assignments"
-            android:id="@+id/nav_s_assignment"
-            android:icon="@drawable/ic_assignments"/>
+            android:title="@string/courses"
+            android:id="@+id/nav_s_courses"
+            android:icon="@drawable/ic_courses"/>
 
         <item
-            android:title="@string/marks_and_feedback"
-            android:id="@+id/nav_s_mark"
-            android:icon="@drawable/ic_assessment"/>
+            android:title="@string/submit_assessments"
+            android:id="@+id/nav_s_assignments"
+            android:icon="@drawable/ic_submit"/>
 
         <item
-            android:title="@string/lecturer_availability"
-            android:id="@+id/nav_s_availability"
-            android:icon="@drawable/ic_availability"/>
+            android:title="@string/late_submission_application"
+            android:id="@+id/nav_s_application"
+            android:icon="@drawable/ic_application"/>
 
         <item
-            android:title="@string/track_assessment"
-            android:id="@+id/nav_s_assessment"
+            android:title="@string/trace_application_status"
+            android:id="@+id/nav_s_status"
             android:icon="@drawable/ic_status"/>
 
         <item
-            android:title="@string/class_schedule"
-            android:id="@+id/nav_s_schedule"
-            android:icon="@drawable/ic_schedule"/>
+            android:title="@string/logout"
+            android:id="@+id/nav_s_logout"
+            android:icon="@drawable/ic_logout"/>
 
     </group>
-
-    <item
-        android:title="">
-
-        <menu>
-            <item
-                android:title="@string/logout"
-                android:id="@+id/nav_s_logout"
-                android:icon="@drawable/ic_logout"/>
-        </menu>
-
-    </item>
 
 </menu>

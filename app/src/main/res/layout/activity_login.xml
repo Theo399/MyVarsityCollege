@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/geo"
     tools:context=".authentication.LoginActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -48,16 +48,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_gravity="center"
             android:text="@string/login_title"
             android:textStyle="bold"
             android:textSize="30sp"/>
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:backgroundTint="@color/bermuda_shell"
+            android:src="@drawable/ic_warning"
+            app:elevation="6dp"
+            app:fabCustomSize="40dp"
+            app:tint="@color/black"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginTop="20dp"
             android:text="@string/email_heading"
             android:textStyle="bold"
@@ -66,7 +76,6 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginTop="7dp"
             android:hint="@string/enter_email">
 
@@ -83,7 +92,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginTop="20dp"
             android:text="@string/password_heading"
             android:textStyle="bold"
@@ -92,7 +100,6 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginTop="7dp"
             android:hint="@string/enter_password">
 

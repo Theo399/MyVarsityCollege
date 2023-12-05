@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
@@ -7,62 +8,60 @@
         android:checkableBehavior="single">
 
         <item
-            android:title="@string/home"
-            android:id="@+id/nav_a_home"
-            android:icon="@drawable/ic_home"/>
+            android:title="@string/dashboard"
+            android:id="@+id/nav_a_dashboard"
+            android:icon="@drawable/ic_dashboard"/>
 
         <item
-            android:title="@string/registerAdmin"
-            android:id="@+id/nav_a_register"
-            android:icon="@drawable/ic_register"/>
+            android:title="@string/calendar"
+            android:id="@+id/nav_a_calendar"
+            android:icon="@drawable/ic_calendar"/>
 
         <item
-            android:title="@string/communicate"
-            android:id="@+id/nav_a_communicate"
-            android:icon="@drawable/ic_communicate"/>
+            android:title="@string/files_library"
+            android:id="@+id/nav_a_files"
+            android:icon="@drawable/ic_files"/>
 
         <item
-            android:title="@string/announcements"
-            android:id="@+id/nav_a_announcement"
-            android:icon="@drawable/ic_announcement"/>
+            android:title="@string/courses"
+            android:id="@+id/nav_a_courses"
+            android:icon="@drawable/ic_courses"/>
 
         <item
-            android:title="@string/lecturer_workload_process"
-            android:id="@+id/nav_a_workload"
-            android:icon="@drawable/ic_assessment"/>
+            android:title="@string/team"
+            android:id="@+id/nav_a_team"
+            android:icon="@drawable/ic_team"/>
 
         <item
-            android:title="@string/assessment_timetables"
-            android:id="@+id/nav_a_assessment"
-            android:icon="@drawable/ic_query"/>
+            android:title="@string/messenger"
+            android:id="@+id/nav_a_messenger"
+            android:icon="@drawable/ic_messenger"/>
 
         <item
-            android:title="@string/assessment_reports"
-            android:id="@+id/nav_a_report"
-            android:icon="@drawable/ic_report"/>
+            android:title="@string/feedback"
+            android:id="@+id/nav_a_feedback"
+            android:icon="@drawable/ic_feedback"/>
 
         <item
-            android:title="@string/marks_balance_and_verification"
-            android:id="@+id/nav_a_mark"
-            android:icon="@drawable/ic_mark"/>
+            android:title="@string/add_user"
+            android:id="@+id/nav_a_user"
+            android:icon="@drawable/ic_user"/>
 
         <item
-            android:title="@string/assessment_and_deadline_reminders"
-            android:id="@+id/nav_a_reminder"
-            android:icon="@drawable/ic_schedule"/>
+            android:title="@string/assign_timetables"
+            android:id="@+id/nav_a_timetables"
+            android:icon="@drawable/ic_timetable"/>
+
+        <item
+            android:title="@string/create_trace_application"
+            android:id="@+id/nav_a_application"
+            android:icon="@drawable/ic_application"/>
+
+        <item
+            android:title="@string/logout"
+            android:id="@+id/nav_a_logout"
+            android:icon="@drawable/ic_logout"/>
 
     </group>
-
-    <item
-        android:title="">
-
-        <menu>
-            <item
-                android:title="@string/logout"
-                android:id="@+id/nav_a_logout"
-                android:icon="@drawable/ic_logout"/>
-        </menu>
-
-    </item>
 
 </menu>

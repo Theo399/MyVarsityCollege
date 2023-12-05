@@ -13,25 +13,28 @@
         android:theme="@style/Theme.MyVC"
         tools:targetApi="31">
         <activity
+            android:name=".authorization.manager.ManagerActivity"
+            android:exported="false" />
+        <activity
             android:name=".authorization.student.StudentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value=""/>
+                android:value="" />
         </activity>
         <activity
             android:name=".authorization.lecturer.LecturerActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value=""/>
+                android:value="" />
         </activity>
         <activity
             android:name=".authorization.admin.AdminActivity"
-            android:exported="false" >
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value=""/>
+                android:value="" />
         </activity>
         <activity
             android:name=".authentication.LoginActivity"
@@ -41,8 +44,8 @@
             android:exported="false" />
         <activity
             android:name=".main.MainActivity"
-            android:theme="@style/Theme.App.SplashScreen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

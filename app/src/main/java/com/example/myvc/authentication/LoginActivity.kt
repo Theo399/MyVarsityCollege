@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.myvc.authentication.database.Credentials
 import com.example.myvc.authorization.admin.AdminActivity
 import com.example.myvc.authorization.lecturer.LecturerActivity
+import com.example.myvc.authorization.manager.ManagerActivity
 import com.example.myvc.authorization.student.StudentActivity
 import com.example.myvc.databinding.ActivityLoginBinding
 import com.google.firebase.database.DataSnapshot
@@ -30,6 +31,10 @@ class LoginActivity : AppCompatActivity() {
 
         firebaseDatabase = FirebaseDatabase.getInstance()
         databaseReference = firebaseDatabase.reference.child("credentials")
+
+        binding.tip.setOnClickListener {
+            binding.tip.tooltipText = "Check your email if you forgot your password."
+        }
 
         binding.loginBtn.setOnClickListener {
             binding.loginBtn.setBackgroundColor(Color.BLUE)
@@ -55,8 +60,9 @@ class LoginActivity : AppCompatActivity() {
     private fun login (email: String, password: String) {
 
         val role1 = "Admin"
-        val role2 = "Lecturer"
-        val role3 = "Student"
+        val role2 = "Manager"
+        val role3 = "Lecturer"
+        val role4 = "Student"
 
         databaseReference.orderByChild("email").equalTo(email).addListenerForSingleValueEvent(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -69,9 +75,13 @@ class LoginActivity : AppCompatActivity() {
                             finish()
                         } else if (userCredentials != null && userCredentials.password == password && userCredentials.role == role2) {
                             Toast.makeText(this@LoginActivity, "Logged in Successfully", Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this@LoginActivity, LecturerActivity::class.java))
+                            startActivity(Intent(this@LoginActivity, ManagerActivity::class.java))
                             finish()
                         } else if (userCredentials != null && userCredentials.password == password && userCredentials.role == role3) {
+                            Toast.makeText(this@LoginActivity, "Logged in Successfully", Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(this@LoginActivity, LecturerActivity::class.java))
+                            finish()
+                        } else if (userCredentials != null && userCredentials.password == password && userCredentials.role == role4) {
                             Toast.makeText(this@LoginActivity, "Logged in Successfully", Toast.LENGTH_SHORT).show()
                             startActivity(Intent(this@LoginActivity, StudentActivity::class.java))
                             finish()

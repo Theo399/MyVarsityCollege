@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myvc.authentication.database.Credentials
-import com.example.myvc.authorization.admin.AdminActivity
 import com.example.myvc.databinding.ActivityRegisterBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -44,12 +43,6 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this@RegisterActivity, "Fill all the fields", Toast.LENGTH_SHORT).show()
             }
         }
-
-       /* binding.haveAccount.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-            Toast.makeText(this@RegisterActivity, "Please Login", Toast.LENGTH_SHORT).show()
-            finish()
-        }*/
     }
 
     private fun register(username: String, email: String, password: String, role: String) {
@@ -60,7 +53,7 @@ class RegisterActivity : AppCompatActivity() {
                     val userCredentials = Credentials(id, username, email, password, role)
                     databaseReference.child(id!!).setValue(userCredentials)
                     Toast.makeText(this@RegisterActivity, "Registered Successfully", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@RegisterActivity, AdminActivity::class.java))
+                    startActivity(Intent(this@RegisterActivity, RegisterActivity::class.java))
                     finish()
                 } else {
                     Toast.makeText(this@RegisterActivity, "User Already Exists", Toast.LENGTH_SHORT).show()
