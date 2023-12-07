@@ -55,12 +55,8 @@ class sExtensionActivity : AppCompatActivity() {
                 )
                 db.insertExtension(userExtension)
                 Toast.makeText(this, "Ticket Sent Successfully", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, sExtensionActivity::class.java))
-                finish()
             } else {
                 Toast.makeText(this, "You have reached your limit", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, sExtensionActivity::class.java))
-                finish()
             }
             /*
             val userExtension = Extension(
