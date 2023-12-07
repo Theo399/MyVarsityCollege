@@ -76,9 +76,7 @@ class sExtensionActivity : AppCompatActivity() {
                 status
             )
             db.insertExtension(userExtension)
-            Toast.makeText(this, "Approved", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, sTraceActivity::class.java))
-            finish()*/
+            Toast.makeText(this, "Ticket Sent Successfully", Toast.LENGTH_SHORT).show()*/
         }
     }
 }
