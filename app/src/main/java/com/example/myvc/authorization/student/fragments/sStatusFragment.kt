@@ -54,7 +54,7 @@ class sStatusFragment : Fragment() {
             false
         })
 
-        myWebView.loadUrl("https://forms.office.com/Pages/AnalysisPage.aspx?AnalyzerToken=YOmUqli12ewzmuUyN69skNaRLX3G5HU4&id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAABZlTFhURUw2VU4wWE1NWlY5OEVHUTkzWjkzNEhZTi4u")
+        myWebView.loadUrl("https://www.formstack.com/admin/submission/report/44402213")
         myWebView.settings.javaScriptEnabled = true
         myWebView.settings.allowContentAccess = true
         myWebView.settings.domStorageEnabled = true

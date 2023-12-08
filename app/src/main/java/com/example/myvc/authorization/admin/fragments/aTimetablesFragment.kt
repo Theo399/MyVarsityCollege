@@ -23,6 +23,7 @@ class aTimetablesFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_a_timetables, container, false)
     }
 
+    @Suppress("DEPRECATION")
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val myWebView: WebView = view.findViewById(R.id.webView)
@@ -54,10 +55,13 @@ class aTimetablesFragment : Fragment() {
             false
         })
 
-        myWebView.loadUrl("https://www.office.com/?acctsw=1&auth=1")
+        myWebView.loadUrl("https://teamup.com/c/rpgtq6")
         myWebView.settings.javaScriptEnabled = true
         myWebView.settings.allowContentAccess = true
         myWebView.settings.domStorageEnabled = true
         myWebView.settings.useWideViewPort = true
+        myWebView.settings.allowFileAccess = true
+        myWebView.settings.allowFileAccessFromFileURLs = true
+        myWebView.settings.allowUniversalAccessFromFileURLs = true
     }
 }

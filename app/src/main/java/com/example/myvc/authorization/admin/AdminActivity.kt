@@ -13,13 +13,7 @@ import com.example.myvc.R
 import com.example.myvc.authentication.LoginActivity
 import com.example.myvc.authentication.RegisterActivity
 import com.example.myvc.authorization.admin.fragments.aApplicationFragment
-import com.example.myvc.authorization.admin.fragments.aCalendarFragment
-import com.example.myvc.authorization.admin.fragments.aCoursesFragment
 import com.example.myvc.authorization.admin.fragments.aDashboardFragment
-import com.example.myvc.authorization.admin.fragments.aFeedbackFragment
-import com.example.myvc.authorization.admin.fragments.aFilesFragment
-import com.example.myvc.authorization.admin.fragments.aMessengerFragment
-import com.example.myvc.authorization.admin.fragments.aTeamFragment
 import com.example.myvc.authorization.admin.fragments.aTimetablesFragment
 import com.example.myvc.databinding.ActivityAdminBinding
 import com.google.android.material.navigation.NavigationView
@@ -56,18 +50,18 @@ class AdminActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         when(item.itemId) {
             R.id.nav_a_dashboard -> supportFragmentManager.beginTransaction()
                 .replace(R.id.frameLayout, aDashboardFragment()).commit()
-            R.id.nav_a_calendar -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aCalendarFragment()).commit()
-            R.id.nav_a_files -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aFilesFragment()).commit()
-            R.id.nav_a_courses -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aCoursesFragment()).commit()
-            R.id.nav_a_team -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aTeamFragment()).commit()
-            R.id.nav_a_messenger -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aMessengerFragment()).commit()
-            R.id.nav_a_feedback -> supportFragmentManager.beginTransaction()
-                .replace(R.id.frameLayout, aFeedbackFragment()).commit()
+            //R.id.nav_a_calendar -> supportFragmentManager.beginTransaction()
+                //.replace(R.id.frameLayout, aCalendarFragment()).commit()
+            //R.id.nav_a_files -> supportFragmentManager.beginTransaction()
+                //.replace(R.id.frameLayout, aFilesFragment()).commit()
+            //R.id.nav_a_courses -> supportFragmentManager.beginTransaction()
+                //.replace(R.id.frameLayout, aCoursesFragment()).commit()
+            //R.id.nav_a_team -> supportFragmentManager.beginTransaction()
+                //.replace(R.id.frameLayout, aTeamFragment()).commit()
+            //R.id.nav_a_messenger -> supportFragmentManager.beginTransaction()
+                //.replace(R.id.frameLayout, aMessengerFragment()).commit()
+            //R.id.nav_a_feedback -> supportFragmentManager.beginTransaction()
+                //.replace(R.id.frameLayout, aFeedbackFragment()).commit()
             R.id.nav_a_user -> startActivity(Intent(this@AdminActivity, RegisterActivity::class.java))
             R.id.nav_a_timetables -> supportFragmentManager.beginTransaction()
                 .replace(R.id.frameLayout, aTimetablesFragment()).commit()

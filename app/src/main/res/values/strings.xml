@@ -47,4 +47,9 @@
     <string name="late_submission_application">Late Submission Application</string>
     <string name="trace_application_status">Trace Application Status</string>
     <string name="create_trace_application">Create/Trace Application</string>
+    <string name="timetable">Timetable</string>
+    <string name="availability">Availability</string>
+    <string name="portal">Portal</string>
+    <string name="late_submission_query">Late Submission Query</string>
+    <string name="trace_query_status">Trace Query Status</string>
 </resources>

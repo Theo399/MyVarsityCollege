@@ -8,39 +8,9 @@
         android:checkableBehavior="single">
 
         <item
-            android:title="@string/dashboard"
+            android:title="@string/portal"
             android:id="@+id/nav_a_dashboard"
             android:icon="@drawable/ic_dashboard"/>
-
-        <item
-            android:title="@string/calendar"
-            android:id="@+id/nav_a_calendar"
-            android:icon="@drawable/ic_calendar"/>
-
-        <item
-            android:title="@string/files_library"
-            android:id="@+id/nav_a_files"
-            android:icon="@drawable/ic_files"/>
-
-        <item
-            android:title="@string/courses"
-            android:id="@+id/nav_a_courses"
-            android:icon="@drawable/ic_courses"/>
-
-        <item
-            android:title="@string/team"
-            android:id="@+id/nav_a_team"
-            android:icon="@drawable/ic_team"/>
-
-        <item
-            android:title="@string/messenger"
-            android:id="@+id/nav_a_messenger"
-            android:icon="@drawable/ic_messenger"/>
-
-        <item
-            android:title="@string/feedback"
-            android:id="@+id/nav_a_feedback"
-            android:icon="@drawable/ic_feedback"/>
 
         <item
             android:title="@string/add_user"
@@ -53,9 +23,9 @@
             android:icon="@drawable/ic_timetable"/>
 
         <item
-            android:title="@string/create_trace_application"
+            android:title="@string/trace_query_status"
             android:id="@+id/nav_a_application"
-            android:icon="@drawable/ic_application"/>
+            android:icon="@drawable/ic_status"/>
 
         <item
             android:title="@string/logout"

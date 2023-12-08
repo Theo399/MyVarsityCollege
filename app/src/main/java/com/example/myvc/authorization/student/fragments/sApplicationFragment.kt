@@ -54,7 +54,7 @@ class sApplicationFragment : Fragment() {
             false
         })
 
-        myWebView.loadUrl("https://forms.office.com/r/iN4uf7JGPJ")
+        myWebView.loadUrl("https://myvc-qkjhz.formstack.com/forms/my_vc_quries")
         myWebView.settings.javaScriptEnabled = true
         myWebView.settings.allowContentAccess = true
         myWebView.settings.domStorageEnabled = true

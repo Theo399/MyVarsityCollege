@@ -7,42 +7,22 @@
         android:checkableBehavior="single">
 
         <item
-            android:title="@string/dashboard"
+            android:title="@string/portal"
             android:id="@+id/nav_s_dashboard"
             android:icon="@drawable/ic_dashboard"/>
 
         <item
-            android:title="@string/calendar"
-            android:id="@+id/nav_s_calendar"
-            android:icon="@drawable/ic_calendar"/>
+            android:title="@string/timetable"
+            android:id="@+id/nav_s_timetables"
+            android:icon="@drawable/ic_timetable"/>
 
         <item
-            android:title="@string/members"
-            android:id="@+id/nav_s_members"
-            android:icon="@drawable/ic_members"/>
-
-        <item
-            android:title="@string/files_library"
-            android:id="@+id/nav_s_files"
-            android:icon="@drawable/ic_files"/>
-
-        <item
-            android:title="@string/courses"
-            android:id="@+id/nav_s_courses"
-            android:icon="@drawable/ic_courses"/>
-
-        <item
-            android:title="@string/submit_assessments"
-            android:id="@+id/nav_s_assignments"
-            android:icon="@drawable/ic_submit"/>
-
-        <item
-            android:title="@string/late_submission_application"
+            android:title="@string/late_submission_query"
             android:id="@+id/nav_s_application"
             android:icon="@drawable/ic_application"/>
 
         <item
-            android:title="@string/trace_application_status"
+            android:title="@string/trace_query_status"
             android:id="@+id/nav_s_status"
             android:icon="@drawable/ic_status"/>
 
